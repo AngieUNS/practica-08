@@ -9,7 +9,7 @@ CREATE TABLE cliente
   direccion                  VARCHAR(20),
   ciudad                     VARCHAR(20),
   provincia                  VARCHAR(15),
-  país                       VARCHAR(20),
+  pais                       VARCHAR(20),
   codigo_postal              VARCHAR(15),
   historial_crediticio       VARCHAR(9),
   ventas_rep_id              VARCHAR(3),
@@ -47,3 +47,4 @@ INSERT INTO cliente VALUES ('212', 'Hamada Sport', '20-31209222','47A Corniche',
 INSERT INTO cliente VALUES ('213', 'Sports Emporium', '1-415-555-6281','4783 168th Street','San Francisco', 'CA', 'US', NULL,'EXCELENTE', '11', '1', NULL);
 INSERT INTO cliente VALUES ('214', 'Sports Retail', '1-716-555-7777','115 Main Street','Buffalo', 'NY', 'US', NULL, 'MALO', '11', '1', NULL);
 INSERT INTO cliente VALUES ('215', 'Sports Russia', '7-0953892444','7070 Yekatamina','Saint Petersburg', NULL, 'Russia', NULL,'MALO', '11', '5', NULL);
+COMMIT;
