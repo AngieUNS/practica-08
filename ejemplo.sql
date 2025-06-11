@@ -10,7 +10,7 @@ CREATE TABLE cliente
   ciudad                     VARCHAR(20),
   provincia                  VARCHAR(15),
   pais                       VARCHAR(20),
-  codigo_postal              VARCHAR(15),
+  codigo_postal              VARCHAR(20),
   historial_crediticio       VARCHAR(9),
   ventas_rep_id              VARCHAR(3),
   region_id                  VARCHAR(3),
@@ -19,6 +19,7 @@ CREATE TABLE cliente
   CONSTRAINT cliente_historial_crediticio_ck
   CHECK (historial_crediticio IN ('EXCELENTE', 'BUENO', 'MALO'))
  );
+
 
 
 INSERT INTO cliente VALUES ('301', 'Sports,Inc', '540-123-4567','72 High St','Harrisonburg', 'VA','US', '22809','EXCELENTE', '12', '1', NULL);
